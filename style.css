@@ -1,0 +1,91 @@
+/* Genel sayfa ayarları */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0; /* Hafif krem-bej tonları, sıcak bir atmosfer */
+  color: #333; /* Koyu gri yazı, göz yormaz */
+  margin: 20px;
+  line-height: 1.6;
+}
+
+/* Başlıklar */
+h1 {
+  color: #b7410e; /* Koyu turuncu/kahve tonları */
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.8em;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+h2 {
+  color: #d2691e; /* Çekici turuncu ton */
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d2691e;
+  padding-bottom: 5px;
+}
+
+/* Paragraflar */
+p {
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  font-size: 1.1em;
+}
+
+/* Linkler */
+a {
+  color: #b7410e;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Liste (menü) */
+ul {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding-left: 20px;
+  list-style-type: square;
+  font-size: 1.1em;
+}
+
+/* Görsel galerisi için düzenleme */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+.gallery img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive tasarım (mobil uyumlu) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+  }
+  ul {
+    max-width: 100%;
+  }
+}
+
+
